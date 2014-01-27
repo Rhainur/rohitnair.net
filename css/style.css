@@ -120,6 +120,11 @@ footer{
 	display: block;
 }
 
+.gallery{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
 .gallery div{
 	display: inline-block;
 	width: 24%;
@@ -143,6 +148,10 @@ footer{
 .app-link img{
 	max-width: 200px;
 	margin: 0 auto;
+}
+
+.text-center{
+	text-align: center;
 }
 
 /* Program Picker and Lift Fixer */
@@ -185,6 +194,70 @@ footer{
 	border-top: 11px solid #333333;
 }
 
+.clear{
+	clear: both;
+}
+
+/* Portfolio */
+
+.portfolio-item{
+	width: 90%;
+	margin: 0 auto;
+	opacity: 0.75;
+	padding: 20px 20px 0 20px;
+	border-bottom: 1px #AAA dashed;
+	transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+	-o-transition: all 0.7s;
+}
+
+.portfolio-item:last-child{
+	border-bottom: none;
+}
+
+.portfolio-item:hover{
+	opacity: 1;
+}
+
+.portfolio-item a{
+	width: 15%;
+	float: left;
+}
+
+.portfolio-item img{
+	border: 1px #999 solid;
+	margin: 20px;
+	width: 100%;
+}
+
+.portfolio-item-details{
+	width: 80%;
+	margin-left: 4%;
+	float: left;
+}
+
+.portfolio-item-details p:first-child{
+	padding-top: 40px;
+}
+
+.portfolio-item-details p{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+
+@media handheld, only screen and (max-width: 960px) {
+	.portfolio-item a{
+		width: 25%;
+	}
+
+	.portfolio-item-details{
+		width: 70%;
+	}
+}
+
 @media handheld, only screen and (max-width: 800px) {
 	.gallery div{
 		width: 32%;
@@ -196,6 +269,37 @@ footer{
 		margin: 0 auto;
 	}
 
+	.portfolio-item a{
+		width: 35%;
+	}
+
+	.portfolio-item-details{
+		width: 60%;
+	}
+
+}
+
+@media handheld, only screen and (max-width: 640px) {
+	.portfolio-item a{
+		width: 175px;
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.portfolio-item img{
+		width: 175px;
+		margin: 0;
+	}
+
+	.portfolio-item-details{
+		width: 100%;
+	}
+
+	.portfolio-item-details p{
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 
