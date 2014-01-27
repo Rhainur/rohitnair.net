@@ -27,11 +27,12 @@ $(document).ready( function(){
 
 	$('header a').click(
 		function(){
-			ga('send', 'pageview', '/' + encodeURIComponent($(this).attr('href').substring(1)));
 			if($(this).attr('href')=='#home'){
 				arrowLeft = ($('.top-navigation').width()/2)-18;
+				ga('send', 'pageview', '/');
 			}else{
 				arrowLeft = shiftArrowBelow(this);
+				ga('send', 'pageview', '/' + encodeURIComponent($(this).attr('href').substring(1)));
 			}
 
 			if($('.current-section').attr('id')==$(this).attr('href').substring(1))
