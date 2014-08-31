@@ -116,6 +116,10 @@ footer{
 	font-weight: lighter;
 }
 
+.content-section strong{
+	font-weight: bold;
+}
+
 .current-section{
 	display: block;
 }
