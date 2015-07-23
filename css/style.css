@@ -46,21 +46,35 @@ footer{
 .transformed-text-container{
 	width: 1200px;
 	opacity: 0.1;
-	font-size: 5em;
+	font-size: 4em;
 	overflow: hidden;
 	line-height: 0.8em;
+	text-transform: uppercase;
 	word-break: break-all;
 	text-align: justify;
-	transform: rotate(-45deg);
-	transform-origin: -200px 200px;
+	transform: rotate(-30deg);
+	transform-origin: -600px 100px;
 	word-spacing: -10px;
 	transition: all 3s;
 	cursor: default;
+	animation: moving_text 4s linear 0s infinite alternate;
+	animation-play-state: paused;
 }
 
 .transformed-text-container:hover{
-	width: 1400px;
+	animation-play-state: running;
 }
+
+@keyframes moving_text{
+	from {
+		width: 1200px;
+	}
+
+	to{
+		width: 1600px;
+	}
+}
+
 .logo{
 	width: 100%;
 	max-width: 320px;
