@@ -24,8 +24,6 @@ footer{
 }
 
 .outer-container{
-	border: 15px #333333 solid;
-	padding: 50px 0;
 }
 
 .container{
@@ -35,9 +33,34 @@ footer{
 }
 
 .logo-container{
-	text-align: center;
+	height: 300px;
+	overflow: hidden;
+	margin: 10px 0;
 }
 
+#logo-link{
+	z-index: 20;
+	position: relative;
+}
+
+.transformed-text-container{
+	width: 1200px;
+	opacity: 0.1;
+	font-size: 5em;
+	overflow: hidden;
+	line-height: 0.8em;
+	word-break: break-all;
+	text-align: justify;
+	transform: rotate(-45deg);
+	transform-origin: -200px 200px;
+	word-spacing: -10px;
+	transition: all 3s;
+	cursor: default;
+}
+
+.transformed-text-container:hover{
+	width: 1400px;
+}
 .logo{
 	width: 100%;
 	max-width: 320px;
