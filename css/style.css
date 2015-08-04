@@ -4,10 +4,6 @@ body{
 	min-width: 320px;
 }
 
-header{
-	margin-bottom: 1.6em !important;
-}
-
 footer{
 	padding-top: 20px;
 	opacity: 0.6;
@@ -35,6 +31,10 @@ footer{
 .logo-container{
 	height: 300px;
 	overflow: hidden;
+	margin: 10px 0;
+}
+
+.logo-container-small{
 	margin: 10px 0;
 }
 
@@ -80,7 +80,7 @@ footer{
 	max-width: 320px;
 }
 
-.logo-container a{
+.logo-container a, .logo-container-small a{
 	display: block;
 	width: 100%;
 	max-width: 320px;
